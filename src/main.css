@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+ font-size: 62.5%;
+ scroll-behavior: smooth;
+ font-family: "Roboto", "Helvetica Neue";
+}
+
+.header {
+ @apply flex items-center justify-between w-full fixed top-0 z-10 h-[5.4rem] p-[3.2rem]
+}
+
+.logo {
+ @apply h-6
+}
+
+.header-links {
+ @apply text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 transition-all duration-300
+}
+
+.car-section {
+ @apply w-full h-screen relative
+}
+
+.car-section img {
+ @apply w-full h-full object-cover
+}
+.transform_50 {
+ transform: translate(-50%, -50%);
+}
+.car-section-title {
+ @apply  absolute top-[20%] left-[50%] text-center
+}
+
+.model-name {
+ @apply text-[4rem] text-[#393c41] font-semibold
+}
+.tag-line {
+ @apply text-2xl text-[#4c4d51] 
+}
+
+.car-buttons {
+ @apply absolute top-[85%] left-[50%] flex flex-col lg:flex-row 
+}
+
+.btn {
+ @apply text-2xl font-medium text-white bg-[#171a20] px-[2.4rem] py-[0.8rem] uppercase my-2 rounded-[3.2rem] w-[25.5rem] h-16 bg-opacity-80
+}
+
+.inventory{ 
+ @apply bg-white text-[#393c41] bg-opacity-60 lg:ml-8;
+}
+
+.down-svg {
+ @apply block w-full h-20 mx-auto absolute top-[93%] animate-bounce
+}
